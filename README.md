@@ -59,9 +59,6 @@ The server will run on port 8080, and you can access the Swagger documentation a
     yarn preview
     # OR
     npm run preview
-4. 
-   ```bash
-    npm run start:dev
 
 The frontend will be accessible at http://localhost:3001.
 
