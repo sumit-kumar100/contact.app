@@ -19,8 +19,7 @@ Welcome to the Contact App repository! This app allows you to manage contacts an
   - PostgreSQL
 
 - Frontend:
-  - Yarn (or npm)
-  - Vue.js (or your chosen frontend framework)
+  - React/Next.js
 
 ## Setup
 
