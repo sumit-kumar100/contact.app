@@ -79,6 +79,7 @@ This project is licensed under the [LICENSE NAME] License - see the LICENSE.md f
 
 ## Preview Images
 
+<img src="contact-app-previews/preview-0.png" width="800" height="465">
 <img src="contact-app-previews/preview-1.png" width="800" height="465">
 <img src="contact-app-previews/preview-2.png" width="800" height="465">
 <img src="contact-app-previews/preview-3.png" width="800" height="465">
