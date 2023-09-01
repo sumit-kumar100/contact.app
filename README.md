@@ -62,6 +62,14 @@ The server will run on port 8080, and you can access the Swagger documentation a
 
 The frontend will be accessible at http://localhost:3001.
 
+## Preview Images
+
+<img src="contact-app-previews/preview-0.png" width="800" height="465">
+<img src="contact-app-previews/preview-1.png" width="800" height="465">
+<img src="contact-app-previews/preview-2.png" width="800" height="465">
+<img src="contact-app-previews/preview-3.png" width="800" height="465">
+<img src="contact-app-previews/preview-4.png" width="800" height="465">
+
 ## Usage
 You can now use the Contact App to manage your contacts, perform CRUD operations, and utilize server-side pagination and filtering. Feel free to explore the Swagger documentation for available endpoints and try them out.
 
@@ -76,14 +84,6 @@ If you'd like to contribute to this project, please follow these steps:
 
 ##License
 This project is licensed under the [LICENSE NAME] License - see the LICENSE.md file for details.
-
-## Preview Images
-
-<img src="contact-app-previews/preview-0.png" width="800" height="465">
-<img src="contact-app-previews/preview-1.png" width="800" height="465">
-<img src="contact-app-previews/preview-2.png" width="800" height="465">
-<img src="contact-app-previews/preview-3.png" width="800" height="465">
-<img src="contact-app-previews/preview-4.png" width="800" height="465">
 
 Thank you for using the Contact App!
 
