@@ -1,0 +1,84 @@
+{
+    "contact-response-200": {
+        "description": "Schema for Contact",
+        "example": {
+            "error": null,
+            "message": "example message for contact.",
+            "data": {
+                "id": "2994aba6-73de-4e53-a201-4f34cb7bf074",
+                "firstName": "Leonardo",
+                "lastName": "caprio",
+                "phone": "6783498276",
+                "email": "leonardo.caprio@gmail.com",
+                "gender": "MALE",
+                "dateOfBirth": "1995-01-01",
+                "active": true,
+                "address": {
+                    "addressLineOne": "415, 3rd Main Road",
+                    "addressLineTwo": "9th block",
+                    "city": "Los angeles",
+                    "country": "USA",
+                    "zipcode": "460030"
+                }
+            }
+        },
+        "properties": {
+            "error": {
+                "type": "null"
+            },
+            "message": {
+                "type": "string"
+            },
+            "data": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "dateOfBirth": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "active": {
+                    "type": "boolean"
+                },
+                "address": {
+                    "addressLineOne": {
+                        "type": "string"
+                    },
+                    "addressLineTwo": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "zipcode": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "title": "contact-response-200",
+        "type": "object",
+        "xml": {
+            "name": "contact-response-200"
+        }
+    }
+}

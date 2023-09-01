@@ -1,0 +1,32 @@
+{
+    "0000": {
+        "message": "Something went wrong..."
+    },
+    "0002": {
+        "message": "Contact already exists with same email and phone."
+    },
+    "0010": {
+        "message": "Failed to add the contact."
+    },
+    "0011": {
+        "message": "Contact(s) not found."
+    },
+    "0012": {
+        "message": "Failed to update the contact details."
+    },
+    "0013": {
+        "message": "Failed to delete the contact details."
+    },
+    "0014": {
+        "message": "Failed to add the address details for Contact."
+    },
+    "0015": {
+        "message": "Contact address details not found."
+    },
+    "0016": {
+        "message": "Failed to update the address details for Contact."
+    },
+    "0017": {
+        "message": "Failed to delete the address details for Contact."
+    }
+}

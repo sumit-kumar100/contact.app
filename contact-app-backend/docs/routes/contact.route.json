@@ -1,0 +1,262 @@
+{
+  "/contacts": {
+    "post": {
+      "description": "Create an Contact.",
+      "operationId": "createAnContact",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/contact"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/contact-response-200"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/contact-response-200"
+              }
+            }
+          },
+          "description": "Contact created successfully"
+        }
+      },
+      "summary": "Create an Contact",
+      "tags": [
+        "Contacts"
+      ]
+    },
+    "get": {
+      "description": "Get All Contacts",
+      "operationId": "getAllContacts",
+      "parameters": [
+        {
+          "description": "Limit the no. of results",
+          "explode": false,
+          "in": "query",
+          "name": "limit",
+          "schema": {
+            "type": "number"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Offset to set",
+          "explode": false,
+          "in": "query",
+          "name": "offset",
+          "schema": {
+            "type": "number"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "First Name",
+          "explode": false,
+          "in": "query",
+          "name": "firstName",
+          "schema": {
+            "type": "string"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Last Name",
+          "explode": false,
+          "in": "query",
+          "name": "lastName",
+          "schema": {
+            "type": "string"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Phone No.",
+          "explode": false,
+          "in": "query",
+          "name": "phone",
+          "schema": {
+            "type": "string"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Email ID",
+          "explode": false,
+          "in": "query",
+          "name": "email",
+          "schema": {
+            "type": "string"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Gender",
+          "explode": false,
+          "in": "query",
+          "name": "gender",
+          "schema": {
+            "type": "string"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Date of birth",
+          "explode": false,
+          "in": "query",
+          "name": "dateOfBirth",
+          "schema": {
+            "type": "string",
+            "format": "date"
+          },
+          "style": "simple"
+        },
+        {
+          "description": "Active",
+          "explode": false,
+          "in": "query",
+          "name": "active",
+          "schema": {
+            "type": "number"
+          },
+          "style": "simple"
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Contact(s) fetched successfully"
+        }
+      },
+      "summary": "Get All Contacts",
+      "tags": [
+        "Contacts"
+      ]
+    }
+  },
+  "/contacts/{contactId}": {
+    "get": {
+      "description": "Get an Contact by it's ID",
+      "operationId": "getAnContactById",
+      "parameters": [
+        {
+          "description": "Contact ID",
+          "explode": false,
+          "in": "path",
+          "name": "contactId",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "style": "simple"
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Contact fetched successfully"
+        }
+      },
+      "summary": "Get an Contact by it's ID",
+      "tags": [
+        "Contacts"
+      ]
+    },
+    "put": {
+      "description": "Update an Contact by it's ID",
+      "operationId": "updateAnContactById",
+      "parameters": [
+        {
+          "description": "Contact ID",
+          "explode": false,
+          "in": "path",
+          "name": "contactId",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "style": "simple"
+        }
+      ],
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/contact"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/contact-response-200"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/contact-response-200"
+              }
+            }
+          },
+          "description": "Contact updated successfully"
+        },
+        "400": {
+          "description": "Bad Request"
+        },
+        "404": {
+          "description": "Contact not found"
+        }
+      },
+      "summary": "Update an Contact by it's ID",
+      "tags": [
+        "Contacts"
+      ]
+    },
+    "delete": {
+      "description": "Delete an Contact by it's ID",
+      "operationId": "deleteAnContactById",
+      "parameters": [
+        {
+          "description": "Contact ID",
+          "explode": false,
+          "in": "path",
+          "name": "contactId",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "style": "simple"
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Contact deleted successfully"
+        },
+        "400": {
+          "description": "Bad Request"
+        },
+        "404": {
+          "description": "Contact not found"
+        }
+      },
+      "summary": "Delete an Contact by it's ID",
+      "tags": [
+        "Contacts"
+      ]
+    }
+  }
+}
