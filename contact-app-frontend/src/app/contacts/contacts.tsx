@@ -30,6 +30,7 @@ import { DeleteFormData } from "@/types/globals";
 import { ColumnDef } from "@tanstack/react-table";
 
 import { columns } from "./columns";
+import { StatusColumnHeader } from "./headers";
 
 const Contacts: React.FC = () => {
   const router: any = useRouter();
@@ -69,10 +70,17 @@ const Contacts: React.FC = () => {
 
   const actionColumn: ColumnDef<Contact> = {
     accessorKey: "Actions",
-    header: () => <div className="text-start">Actions</div>,
+    header: StatusColumnHeader,
     cell: ({ row: { original } }) => {
       return (
-        <div className="flex gap-2">
+        <div className="flex justify-center gap-2">
+          <div className="font-medium">
+            {original.active ? (
+              <Icons.Check className="ml-2 h-4" />
+            ) : (
+              <Icons.Cross className="ml-2 h-4" />
+            )}{" "}
+          </div>
           <Icons.Edit
             className="h-4 cursor-pointer"
             onClick={() => handleEdit(original)}

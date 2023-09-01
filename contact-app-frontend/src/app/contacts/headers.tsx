@@ -59,7 +59,7 @@ export const EmailColumnHeader = () => {
   const disptach: RootDispatch = useDispatch();
   const { params } = useSelector((state: RootState) => state.contact);
   return (
-    <div className="min-w-[200px] max-w-[140px] py-2">
+    <div className="min-w-[140px] max-w-[140px] py-2">
       <div className="text-center">Email ID</div>
       <Separator className="my-2" />
       <TextFilter
@@ -106,7 +106,7 @@ export const StatusColumnHeader = () => {
   const { params } = useSelector((state: RootState) => state.contact);
   return (
     <div className="min-w-[140px] max-w-[140px] py-2">
-      <div className="text-center">Status</div>
+      <div className="text-center">Status/Action</div>
       <Separator className="my-2" />
       <DropdownFilter
         value={params.active}

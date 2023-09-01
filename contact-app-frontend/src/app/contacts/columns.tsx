@@ -63,20 +63,5 @@ export const columns: ColumnDef<Contact>[] = [
         </div>
       );
     },
-  },
-  {
-    accessorKey: "active",
-    header: StatusColumnHeader,
-    cell: ({ row: { original } }) => {
-      return (
-        <div className="ml-12 font-medium">
-          {original.active ? (
-            <Icons.Check className="ml-2 h-4" />
-          ) : (
-            <Icons.Cross className="ml-2 h-4" />
-          )}{" "}
-        </div>
-      );
-    },
-  },
+  }
 ];
