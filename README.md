@@ -86,6 +86,3 @@ If you'd like to contribute to this project, please follow these steps:
 This project is licensed under the [LICENSE NAME] License - see the LICENSE.md file for details.
 
 Thank you for using the Contact App!
-
-```vbnet
-Make sure to replace `<repository-url>` with the actual URL of your GitHub repository, and `[LICENSE NAME]` with the appropriate license name you choose for your project. Additionally, replace `/path/to/screenshot.png` with the path to any preview images you'd like to include in your README.
