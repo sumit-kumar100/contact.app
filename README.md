@@ -28,7 +28,7 @@ Welcome to the Contact App repository! This app allows you to manage contacts an
 1. Make sure you have Node.js and PostgreSQL installed on your system.  
 2. Clone this repository.
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sumit-singh1196/contact-app/blob/master/README.md
 3. Change to the backend directory.
    ```bash
    cd contact-app-backend  
@@ -83,6 +83,6 @@ If you'd like to contribute to this project, please follow these steps:
 5. Create a pull request to merge your changes into the main repository.
 
 ##License
-This project is licensed under the [LICENSE NAME] License - see the LICENSE.md file for details.
+This project is licensed under the [contact-app-license] License - see the LICENSE.md file for details.
 
 Thank you for using the Contact App!
