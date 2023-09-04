@@ -22,8 +22,8 @@ export function NextReduxWrapper<State extends HydrateableSlices>({
   }
 
   return (
-    <PersistGate persistor={persistor}>
+    <div className="next-redux-wrapper">
       {preloadedState === true ? children : null}
-    </PersistGate>
+    </div>
   );
 }
