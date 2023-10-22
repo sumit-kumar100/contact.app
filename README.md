@@ -28,7 +28,7 @@ Welcome to the Contact App repository! This app allows you to manage contacts an
 1. Make sure you have Node.js and PostgreSQL installed on your system.  
 2. Clone this repository.
    ```bash
-   git clone https://github.com/sumit-singh1196/contact-app
+   git clone https://github.com/sumit-singh1196/contact.app
 3. Change to the backend directory.
    ```bash
    cd contact-app-backend  
