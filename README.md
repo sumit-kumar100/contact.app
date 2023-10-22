@@ -60,7 +60,7 @@ The server will run on port 8080, and you can access the Swagger documentation a
     # OR
     npm run preview
 
-The frontend will be accessible at http://localhost:3001.
+The frontend will be accessible at http://localhost:3001
 
 ## Preview Images
 
